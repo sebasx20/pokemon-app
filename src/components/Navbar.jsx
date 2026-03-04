@@ -4,10 +4,10 @@ function Navbar() {
       <nav className="navbar">
         <ul className="navbar-ul">
           <li>
-            <a href="/">Pokedex</a>
+            <a href="#/">Pokedex</a>
           </li>
           <li>
-            <a href="/pokemon-app/gallery">Gallery</a>
+            <a href="#/pokemon-app/gallery">Gallery</a>
           </li>
         </ul>
       </nav>
