@@ -56,10 +56,12 @@ export async function spritePrinter() {
 // Pokemon Search
 export async function searchPokemon(name) {
   try {
+    // Make a request with the name
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
 
     if (!response.ok) {
-      throw new Error("Pokemon not found");
+      // throw new alert("Pokemon not found");
+      alert("Pokemon not found");
     }
 
     const data = await response.json();
