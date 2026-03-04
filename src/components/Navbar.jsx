@@ -7,7 +7,7 @@ function Navbar() {
             <a href="#/">Pokedex</a>
           </li>
           <li>
-            <a href="#/pokemon-app/gallery">Gallery</a>
+            <a href="#/gallery">Gallery</a>
           </li>
         </ul>
       </nav>
