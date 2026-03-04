@@ -53,4 +53,19 @@ export async function spritePrinter() {
   }
 }
 
-spritePrinter();
+// Pokemon Search
+export async function searchPokemon(name) {
+  try {
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
+
+    if (!response.ok) {
+      throw new Error("Pokemon not found");
+    }
+
+    const data = await response.json();
+
+    return data.sprites.front_default;
+  } catch (error) {
+    console.log(error);
+  }
+}
